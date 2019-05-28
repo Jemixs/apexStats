@@ -1,0 +1,30 @@
+﻿    AddDefaultCharset utf-8
+    DirectoryIndex index.php
+    php_value mbstring.internal_encoding UTF-8
+
+    RewriteEngine On
+
+    RewriteRule ^news/([0-9]+)?$ news.php?id=$1 [L,QSA]
+    RewriteRule ^news/([0-9]+)/?$ news.php?id=$1 [L,QSA]
+    RewriteRule ^profile?$ profile.php [L,QSA]
+    RewriteRule ^profile/([A-Za-z0-9]+)/([A-Za-z0-9].[^/]+)?$ profile.php?platform=$1&nick=$2 [L,QSA]
+    RewriteRule ^profile/([A-Za-z0-9]+)/([A-Za-z0-9].[^/]+)/update?$ profile.php?platform=$1&nick=$2&update [L,QSA]
+    RewriteRule ^profile/([A-Za-z0-9]+)/([A-Za-z0-9].[^/]+)/match/([0-9]+)?$ profile.php?platform=$1&nick=$2&match=$3 [L,QSA]  
+
+    RewriteRule ^leaderbord?$ leaderbord.php [L,QSA]
+    RewriteRule ^leaderbord/([A-Za-z0-9]+)/?$ leaderbord.php?platform=$1 [L,QSA]
+    RewriteRule ^leaderbord/([A-Za-z0-9]+)/([0-9]*)?$ leaderbord.php?platform=$1&page=$2 [L,QSA]
+    RewriteRule ^leaderbord/([A-Za-z0-9]+)/([0-9]*)/([A-Za-z]+)?$ leaderbord.php?platform=$1&page=$2&sort=$3 [L,QSA]
+
+    RewriteRule ^discord?$ index.php?discord [L,QSA]
+
+    RewriteRule ^maps?$ map.php [L,QSA]
+
+    RewriteRule ^contact?$ feedback.php [L,QSA]
+    RewriteRule ^contact/?$ feedback.php [L,QSA]
+
+    RewriteRule ^edit-post?$ post-editor.php [L,QSA]
+    RewriteRule ^edit-post/([A-Za-z]+)?$ post-editor.php?type=$1 [L,QSA]
+    RewriteRule ^edit-post/([A-Za-z]+)/([0-9]*)?$ post-editor.php?type=$1&id=$2 [L,QSA]
+
+    RewriteRule ^works?$ engworks.php [L,QSA]

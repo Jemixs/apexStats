@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {margin: 0px;font-family: 'Oswald', sans-serif;font-size:13px;}
+body a {text-decoration: none;}
+
+ul,li{margin: 0;padding: 0;}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0;
+}
+
+.container {
+  flex: 1 0 auto;
+}
+
+#map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #4d83a3;
+  cursor: crosshair;
+}
+
+.leaflet-bar {
+  margin-top: 85px!important;
+}
+
+.leaflet-control-container {position: relative;top: 60; right: 0;}
+.leaflet-control-attribution.leaflet-control {display: none;}
+.fullscreen-icon { background-image: url(/images/icon-fullscreen.png); }
+
+.text-label {
+  color: #fff;
+  font-size: 22px;
+}
+
+.leaflet-tooltip {
+  background-color: transparent;
+  border: none;
+  box-shadow: none!important;
+}
+
+.leaflet-tooltip-top:before {
+  border: none!important;
+}
+
+span.location {
+  font-family: "Oswald",sans-serif;
+  font-size: 21px;
+  text-shadow: 1px 1px 20px #000, -1px -1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 800;
+  z-index: 1;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #232323;
+  z-index: 99999!important;
+  box-shadow: 0 1px 20px 0px black;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+header .logo img {
+  max-width: 60px;
+}
+
+header .menu {
+  display: flex;
+  align-items: center;
+}
+
+header .menu ul li {
+  display: inline-block;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 21px;
+  margin-left: 34px;
+}
+
+header .menu li .line {
+  opacity: 0;
+  position: relative;
+  top: 11;
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  transition: 0.2s all;
+}
+
+header .menu li:hover .line {
+ opacity: 1;
+}
+
+.left-sidebar {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 300px;
+  background-color: #1c1c1c;
+  z-index: 99998!important;
+  padding-top: 90px;
+  justify-content: center;
+}
+
+.left-sidebar .game-logo img {
+  max-width: 175px;
+}

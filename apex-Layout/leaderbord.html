@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<title>ApexStats - Apex Legends статистика.</title>
+</head>
+<body>
+	<div class="page-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-xl-6 col-lg-6 col-md-8 d-md-block d-sm-none d-none">
+					<div class="menu">
+						<a href="">
+							<div class="logo">
+								<img src="./images/logo.png" alt="">
+							</div>
+						</a>
+
+						<ul class="h-100">
+							<li><a href="index.html">ГЛАВНАЯ</a></li>
+							<li><a href="leaderbord.html">ТОП ИГРОКОВ</a></li>
+							<li><a href="">КАРТА</a></li>
+							<li><a href="">DISCORD</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-3 col-xl-3 col-lg-3 col-md-3 d-md-block d-sm-none d-none">
+					<div class="headerSearch h-100">
+						<input class="text-field" type="text" placeholder="Ник игрока">
+						<button class="send-form"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+				<div class="col-3 col-lg-3 col-xl-3 col-md-1 d-md-block d-sm-none d-none">
+					<div class="discBlock h-100">
+						<a href="" class="discordButton"><i class="fab fa-discord"></i> <span>Посети наш Discord</span></a>
+					</div>
+				</div>
+
+				<div class="col-12 d-sm-block d-md-none">
+					<div class="mobi-header">
+						<a href="">
+							<div class="logo">
+								<img src="./images/logo.png" alt="">
+							</div>
+						</a>
+
+						<div class="openMenu text-right" id="xsHeaderOpen">
+							<i class="fas fa-bars"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="xsHeader">
+		<a class="closeWindow" id="xsHeaderClose" href="">
+			<span class="closeIco"></span> <span class="labeClose">Закрыть</span>
+		</a>
+
+		<ul class="ulMenu">
+			<li><a href="">Главная</a></li>
+			<li><a href="leaderbord.html">ТОП Игроков</a></li>
+			<li><a href="">Карта</a></li>
+			<li><a href="">Discord</a></li>
+		</ul>
+		
+		<div class="headerSearch w-100">
+			<input class="text-field" type="text" placeholder="Ник игрока">
+			<button class="send-form"><i class="fas fa-search"></i></button>
+		</div>
+
+		<div class="discBlock w-100">
+			<a href="" class="discordButton"><i class="fab fa-discord"></i> Посети наш Discord</a>
+		</div>
+	</div>
+
+	<div class="leaderPageBack w-100"></div>
+	<div class="leaderbord h-100">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-xl-9 col-lg-9 col-md-12 col-sm-12">
+					<div class="tableBord">
+						<div class="top w-100">
+							<div class="title w-100">
+								ТОП Игроков
+							</div>
+							<div class="settings w-100 clearfix">
+								<div class="platform">
+									<select name="slct" id="slct">
+										<option>Платформа</option>
+										<option value="1">PC</option>
+										<option value="2">XBOX</option>
+										<option value="3">PS4</option>
+									</select>
+								</div>
+								<div class="sort">
+									<select name="slct" id="slct">
+										<option>Отсортировать по:</option>
+										<option value="1">Уровню</option>
+										<option value="2">Убийствам</option>
+										<option value="3">Урону</option>
+										<option value="4">Хедшотам</option>
+										<option value="5">Матчам</option>
+										<option value="6">Победам</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="pagesList">
+							<a href="" class="firstPage">ПЕРВАЯ</a>
+							<a href="" class="select">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="" class="lastPage">ПОСЛЕДНЯЯ</a>
+						</div>
+						<div class="tableList">
+							<table width="100%" style="table-layout: fixed;">
+								<tbody>
+									<tr>
+										<th width="15%">Место</th>
+										<th width="40%" class="player">Игрок</th>
+										<th class="text-center">Уровень</th>
+										<th class="text-center kills">Убийств</th>
+										<th class="text-center match">Матчей</th>
+									</tr>
+									<tr>
+										<td class="place">1</td>
+										<td class="nick"><a href="./player.html"><img src="./images/avararr.jpg" alt="">DiegosaursTTV</a> <i class="fab fa-windows"></i></td>
+										<td class="rating">100</td>
+										<td class="kills">100</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">2</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">NRG_dizzy</a> <i class="fab fa-xbox"></i></td>
+										<td class="rating">100</td>
+										<td class="kills">9,347</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">3</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">STYAT-SSSSTD</a> <i class="fab fa-playstation"></i></td>
+										<td class="rating">100</td>
+										<td class="kills">8,407</td>
+										<td class="wins">20</td>
+									</tr>
+									<tr>
+										<td class="place">4</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">RhinoTTV</a></td>
+										<td class="rating">100</td>
+										<td class="kills">8,402</td>
+										<td class="wins">495</td>
+									</tr>
+									<tr>
+										<td class="place">5</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">basedgodfearless</a></td>
+										<td class="rating">100</td>
+										<td class="kills">8,026</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">6</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">DespeEvolved</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,793</td>
+										<td class="wins">629</td>
+									</tr>
+									<tr>
+										<td class="place">7</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">Twitch-Frexs</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,642</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">8</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">Termk47</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,592	</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">9</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">staylifteddd</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,430</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a> <i class="fab fa-windows"></i></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">1</td>
+										<td class="nick"><a href="./player.html"><img src="./images/avatar2.png" alt="">DiegosaursTTV</a></td>
+										<td class="rating">100</td>
+										<td class="kills">100</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">2</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">NRG_dizzy</a></td>
+										<td class="rating">100</td>
+										<td class="kills">9,347</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">3</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">Solveful</a></td>
+										<td class="rating">100</td>
+										<td class="kills">8,407</td>
+										<td class="wins">20</td>
+									</tr>
+									<tr>
+										<td class="place">4</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">RhinoTTV</a></td>
+										<td class="rating">100</td>
+										<td class="kills">8,402</td>
+										<td class="wins">495</td>
+									</tr>
+									<tr>
+										<td class="place">5</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">basedgodfearless</a></td>
+										<td class="rating">100</td>
+										<td class="kills">8,026</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">6</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">DespeEvolved</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,793</td>
+										<td class="wins">629</td>
+									</tr>
+									<tr>
+										<td class="place">7</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">Twitch-Frexs</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,642</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">8</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">Termk47</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,592	</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">9</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">staylifteddd</a></td>
+										<td class="rating">100</td>
+										<td class="kills">7,430</td>
+										<td class="wins">-</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+									<tr>
+										<td class="place">10</td>
+										<td class="nick"><a href="./profile.html"><img src="./images/avatar2.png" alt="">jEMIXS</a></td>
+										<td class="rating">100</td>
+										<td class="kills">6,232</td>
+										<td class="wins">135</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="pagesList">
+							<a href="" class="firstPage">ПЕРВАЯ</a>
+							<a href="" class="select">1</a>
+							<a href="">2</a>
+							<a href="">3</a>
+							<a href="" class="lastPage">ПОСЛЕДНЯЯ</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-xl-3 col-lg-3 col-md-12 col-sm-12">
+					<div class="sidebarNews">
+						<div class="title">Новости</div>
+
+						<div class="newsItem">
+							<a href="news.html">
+								<div class="backImg w-100 h-100" style="background-image: url(./images/news-title/news1.png);"></div>
+								<div class="newsTitle">
+									<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae enim fugiat at impedit eum saepe cupiditate aliquid aspernatur iusto dolorem.</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="newsItem">
+							<a href="">
+								<div class="backImg w-100 h-100" style="background-image: url(https://cdn.thetrackernetwork.com/cdn/articles/A713maxresdefault.jpg);"></div>
+								<div class="newsTitle">
+									<span>В сеть слили новых персонажей Apex Legends</span>
+								</div>
+							</a>
+						</div>
+
+						<div class="newsItem">
+							<a href="">
+								<div class="backImg w-100 h-100" style="background-image: url(https://cdn.thetrackernetwork.com/cdn/articles/2197cine2.jpg);"></div>
+								<div class="newsTitle">
+									<span>В сеть слили новых персонажей Apex Legends</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="siteTitle"><a href="#">ApexStats.ru</a></div>
+					<div class="feedback">
+						<a href="">Обратная связь</a>
+					</div>
+					<div class="copyright">
+						<span class="site">© ApexStats</span> 2019. All rights reserved. Apex Legends is a registered trademark of EA.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+</body>
+</html>
