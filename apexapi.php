@@ -7,11 +7,11 @@ use GuzzleHttp\Exception\ClientException;
  */
 class apexApi
 {
-    const XBOX_TOKEN = '0k0g8og080s88owg8gk40s08oogs8kc0ow0';
-    const PSN_TOKEN = 'b5b8dc41-71c4-4346-8ab4-62f27dcbd6b2';
+    const XBOX_TOKEN = 'XBOX-TOKEN-HERE';
+    const PSN_TOKEN = 'PSN-TOKEN-HERE';
 
-    const ORIGIN_MAIL = 'damags11@yandex.ru';
-    const ORIGIN_PASS = 'Worldoftanks1';
+    const ORIGIN_MAIL = 'ORIGIN-MAIL-HERE';
+    const ORIGIN_PASS = 'ORIGIN-PASS-HERE';
 
     private $client;
 
